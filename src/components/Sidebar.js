@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
     const isMenuOpen = useSelector(store => store.app.isMenuOpen);
@@ -9,7 +10,7 @@ const Sidebar = () => {
     return (
         <div className='shadow-md p-4 w-40 mr-4'>
             <ul>
-                <li>🏠 Home</li>
+                <li><Link>Home</Link></li>
                 <li>Shorts</li>
                 <li>Videos</li>
                 <li>Live</li>
